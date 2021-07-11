@@ -1,6 +1,7 @@
 .idea/*
 .nyc_output
 build
+diff
 node_modules
 test
 src/**.js
