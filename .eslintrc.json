@@ -6,6 +6,7 @@
   "ignorePatterns": ["node_modules", "build", "coverage"],
   "plugins": ["import", "eslint-comments", "functional"],
   "extends": [
+    "airbnb-typescript-prettier",
     "eslint:recommended",
     "plugin:eslint-comments/recommended",
     "plugin:@typescript-eslint/recommended",
@@ -16,7 +17,13 @@
   ],
   "globals": { "BigInt": true, "console": true, "WebAssembly": true },
   "rules": {
+    "no-console": "off",
+    "no-irregular-whitespace": "off",
+    "no-unused-vars": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "functional/prefer-readonly-type": "off",
     "eslint-comments/disable-enable-pair": [
       "error",
       { "allowWholeFile": true }
@@ -26,6 +33,8 @@
       "error",
       { "newlines-between": "always", "alphabetize": { "order": "asc" } }
     ],
+    "prettier/prettier": "off",
+    "import/prefer-default-export": "off",
     "sort-imports": [
       "error",
       { "ignoreDeclarationSort": true, "ignoreCase": true }
